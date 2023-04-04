@@ -10,7 +10,7 @@ export class TasksService {
     return this.tasks;
   }
 
-  createTasks(title: string, description: string): Task {
+  createTask(title: string, description: string): Task {
     const task: Task = {
       id: uuid(),
       title,
