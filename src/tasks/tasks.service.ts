@@ -22,6 +22,10 @@ export class TasksService {
     return found;
   }
 
+  createTask(createTaskDto: CreateTaskDto): Promise<Task> {
+    return this.tasksRepository.createTask(createTaskDto);
+  }
+
   // private tasks: Task[] = [];
 
   // getAllTasks(): Task[] {
@@ -47,21 +51,6 @@ export class TasksService {
   //   }
 
   //   return tasks;
-  // }
-
-  // createTask(createTaskDto: CreateTaskDto): Task {
-  //   const { title, description } = createTaskDto;
-
-  //   const task: Task = {
-  //     id: uuid(),
-  //     title,
-  //     description,
-  //     status: TaskStatus.OPEN,
-  //   };
-
-  //   this.tasks.push(task);
-
-  //   return task;
   // }
 
   // updateTaskStatus(id: string, status: TaskStatus): Task {
