@@ -1,5 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-
+import { OrderStatus } from './order-status.enum';
 
 @Entity()
 export class Order {
@@ -13,5 +13,5 @@ export class Order {
   description: string;
 
   @Column()
-  orderStatus: string;
+  orderStatus: OrderStatus;
 }
