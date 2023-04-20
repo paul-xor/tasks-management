@@ -1,6 +1,5 @@
 import { Controller, Post, Body, Query, Get } from '@nestjs/common';
-
-import { Order } from 'src/order/order.entity';
+import { Order } from 'src/orders/order.entity';
 import { OrdersService } from './orders.service';
 import { CreateOrderDto } from './dto/create-order.dto';
 import { OrdersFilterDto } from './dto/orders-filter.dto';
